@@ -1,0 +1,73 @@
+[
+    {
+        "name": "PRINT H2.OD SHORTS W'S",
+        "description":"Шорт",
+        "price": "95,400₮",
+        "brand_img":"https://cdnp.cody.mn/stores/350/medium/montbell.png",
+        "img":"https://cdnp.cody.mn/spree/images/2634249/original/open-uri20240919-3044167-t3aeqv.?1726735248"
+    },
+    
+    {
+        "name": "HEART DANGLE BOW",
+        "description":"Клог гутлын чимэглэл",
+        "price": "29,000₮",
+        "brand_img":"https://cdnp.cody.mn/stores/8/medium/crocs.png",
+        "img": "https://cdnp.cody.mn/spree/images/1663469/zoom/open-uri20230227-4106213-1rq7q1k.?1677476686"
+    },
+
+    {
+        "name": "GRL PWR PIN BACKER 5 PACK",
+        "description":"Клог гутлын чимэглэл",
+        "price": "59,000₮",
+        "brand_img":"https://cdnp.cody.mn/stores/8/medium/crocs.png",
+        "img": "https://cdnp.cody.mn/spree/images/1563836/original/open-uri20221114-2279820-b7ng44.?1668393533"
+    },
+
+    {
+        "name": "Shine Like a Diamond 5 Pack",
+        "description":"Клог гутлын чимэглэл",
+        "price": "79,000₮",
+        "brand_img":"https://cdnp.cody.mn/stores/8/medium/crocs.png",
+        "img": "https://cdnp.cody.mn/spree/images/2236561/zoom/open-uri20240305-228480-xz29nt.?1709604585"
+    },
+
+    {
+        "name": "PARA RAIN LEG COVER",
+        "description":"Борооны хамгаалалт /ПАРА/",
+        "price": "101,400₮",
+        "brand_img":"https://cdnp.cody.mn/stores/350/medium/montbell.png",
+        "img": "https://cdnp.cody.mn/spree/images/517505/original/open-uri20190625-10393-16hoy2x.?1561453059"
+    },
+    
+    {
+        "name": "Punk Star Chain",
+        "description":"Клог гутлын чимэглэл",
+        "price": "29,000₮",
+        "brand_img":"https://cdnp.cody.mn/stores/8/medium/crocs.png",
+        "img": "https://cdnp.cody.mn/spree/images/3151873/original/open-uri20250729-2330283-b55w7h.?1753775470"
+    },
+    
+    {
+        "name": "Beaded Ice Cream Cone",
+        "description":"Клог гутлын чимэглэл",
+        "price": "19,000₮",
+        "brand_img":"https://cdnp.cody.mn/stores/8/medium/crocs.png",
+        "img": "https://cdnp.cody.mn/spree/images/3151864/original/open-uri20250729-2330295-p6dorx.?1753775443"
+    },
+    
+    {
+        "name": "MINI 3D MEGA CRUSH",
+        "description":"Клог гутлын чимэглэл",
+        "price": "29,000₮",
+        "brand_img":"https://cdnp.cody.mn/stores/8/medium/crocs.png",
+        "img": "https://cdnp.cody.mn/spree/images/2634293/original/open-uri20240919-3044167-b2qnq2.?1726735300"
+    },
+    
+    {
+        "name": "TROPICAL REMOVABLE CHARM CHAIN",
+        "description":"Клог гутлын чимэглэл",
+        "price": "79,000₮",
+        "brand_img":"https://cdnp.cody.mn/stores/8/medium/crocs.png",
+        "img": "https://cdnp.cody.mn/spree/images/2634252/original/open-uri20240919-3044179-zr5oqz.?1726735252"
+    }
+]
