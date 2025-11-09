@@ -1,236 +1,120 @@
-const PRODUCTS = [
-    { 
-        id: "p1", 
-        name: "Leather Backpack", 
-        price: 129, 
-        rating: 4.6, 
-        image: "https://m.media-amazon.com/images/I/81IKZRQQ+dL._AC_SX569_.jpg" 
-    },
-    { 
-        id: "p2", 
-        name: "Everyday Sneakers", 
-        price: 89, 
-        rating: 4.4, 
-        image: "https://m.media-amazon.com/images/I/81PPVRm-JFL._AC_SY500_.jpg" 
-    },
-    { 
-        id: "p3", 
-        name: "Modern Desk Lamp", 
-        price: 49, 
-        rating: 4.7, 
-        image: "https://m.media-amazon.com/images/I/71Xa0fzUiGL._AC_SX679_.jpg" 
-    },
-    { 
-        id: "p4", 
-        name: "Ceramic Planter", 
-        price: 34, 
-        rating: 4.5, 
-        image: "https://m.media-amazon.com/images/I/817xESfDw9S._AC_SX679_.jpg" 
-    },
-    { 
-        id: "p5", 
-        name: "Sunglasses", 
-        price: 69, 
-        rating: 4.3, 
-        image: "https://m.media-amazon.com/images/I/51GYi1kNaBL._AC_SX569_.jpg" 
-    },
-    { 
-        id: "p6", 
-        name: "Wool Scarf", 
-        price: 39, 
-        rating: 4.2, 
-        image: "https://m.media-amazon.com/images/I/71wXEGSTt9L._AC_SX466_.jpg" 
-    },
-];
+export default function ApocalypseStore() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      <header className="sticky top-0 z-40 w-full bg-white border-b">
+        <div className="mx-auto grid grid-cols-3 h-16 items-center px-6">
+          <div className="flex items-center gap-8">
+            <a className="text-2xl font-semibold">store</a>
+            <nav className="hidden md:flex gap-6 text-sm text-gray-700">
+              <a className="hover:text-black cursor-pointer">All</a>
+              <a className="hover:text-black cursor-pointer">Men</a>
+              <a className="hover:text-black cursor-pointer">Women</a>
+              <a className="hover:text-black cursor-pointer">Accessories</a>
+            </nav>
+          </div>
+          <div className="flex border-2 rounded-xl">
+            <input type="text" placeholder="Search for Products..." className="w-72 px-3 py-2 text-sm" />
+          </div>
+          <div className="flex justify-end">
+            <button className="relative flex items-center justify-center px-3 py-3 bg-gray-100 border-2 rounded-md text-sm hover:bg-gray-200">
+             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7a1 1 0 00.9 1.5h12.1a1 1 0 00.9-1.5L17 13M7 13V6h10v7M5 21h2m10 0h2M7 21a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4z" />
+             </svg>
+            </button>
 
-function WigglyTopHat() {
-    return (
-        <header className="w-full bg-white border-b">
-            <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                <div className="flex items-center gap-6">
-                    <a href="#" className="text-2xl font-bold tracking-tight">
-                        Store
-                    </a>
-                    <nav className="hidden md:flex gap-4 text-sm text-gray-600">
-                        <a href="#" className="text-black">Men</a>
-                        <a href="#" className="text-black">Women</a>
-                        <a href="#" className="text-black">Home</a>
-                        <a href="#" className="text-black">Sale</a>
-                    </nav>
-                </div>
-                <div className="flex items-center gap-4">
-                    <div className="hidden sm:block">
-                        <input 
-                            className="w-64 px-3 py-2 border rounded-md text-sm focus:outline-none" 
-                            placeholder="Search products" 
-                        />
-                    </div>
-                    <button className="text-sm px-3 py-2 border rounded-md">
-                        Sign in
-                    </button>
-                    <button className="relative px-3 py-2 bg-gray-100 rounded-md text-sm">
-                        Cart 
-                        <span className="ml-2 inline-block w-5 h-5 text-xs text-center rounded-full bg-black text-white">
-                            3
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </header>
-    );
-}
-
-function BigDramaticBanner() {
-    return (
-        <section className="bg-gradient-to-r from-slate-50 to-white">
-            <div className="max-w-7xl mx-auto px-6 py-16 grid gap-8 grid-cols-1 md:grid-cols-2 items-center">
-                <div>
-                    <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                        Everyday essentials, made better
-                    </h1>
-                    <p className="mt-4 text-gray-600 max-w-lg">
-                        Simple, functional, and beautifully crafted items for modern living. 
-                        Free shipping on orders over $75.
-                    </p>
-                    <div className="mt-6 flex gap-3">
-                        <a 
-                            href="#products" 
-                            className="inline-block px-5 py-3 bg-black text-white rounded-md text-sm font-medium"
-                        >
-                            Shop now
-                        </a>
-                        <a 
-                            href="#" 
-                            className="inline-block px-5 py-3 border rounded-md text-sm"
-                        >
-                            Explore
-                        </a>
-                    </div>
-                    <div className="mt-8 text-sm text-gray-500">
-                        Secure checkout. 30-day returns.
-                    </div>
-                </div>
-                <div className="order-first md:order-last">
-                    <div className="relative rounded-xl overflow-hidden shadow-lg">
-                        <img 
-                            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1400&auto=format&fit=crop" 
-                            alt="Hero product" 
-                            className="w-full h-64 md:h-80 object-cover" 
-                        />
-                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/40 to-transparent text-white">
-                            <div className="text-sm">Featured</div>
-                            <div className="text-lg font-semibold">The Everyday Carry</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-}
-
-function ShinyBox({ product }) {
-    return (
-        <div className="bg-white border rounded-lg overflow-hidden shadow-sm shadow-md transition">
-            <div className="aspect-[4/3] bg-gray-100">
-                <img 
-                    src={product.image} 
-                    alt={product.name} 
-                    className="w-full h-full object-cover" 
-                />
-            </div>
-            <div className="p-4">
-                <h3 className="text-sm font-medium">{product.name}</h3>
-                <div className="mt-2 flex items-center justify-between">
-                    <div className="text-lg font-semibold">${product.price}</div>
-                    <div className="text-sm text-gray-500">{product.rating}★</div>
-                </div>
-                <div className="mt-3 flex gap-2">
-                    <button className="flex-1 py-2 text-sm border rounded-md">View</button>
-                    <button className="py-2 px-3 text-sm bg-black text-white rounded-md">Add</button>
-                </div>
-            </div>
+          </div>
         </div>
-    );
-}
+      </header>
 
-function GridOfGlory({ products }) {
-    return (
-        <section id="products" className="max-w-7xl mx-auto px-6 py-12">
-            <div className="flex items-baseline justify-between">
-                <h2 className="text-2xl font-bold">Popular Items</h2>
-                <a href="#" className="text-sm text-gray-600">View all</a>
+      <main>
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="lg:col-span-2">
+              <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
+                <div className="w-full h-[640px] overflow-hidden">
+                  <img src="https://m.media-amazon.com/images/I/81IKZRQQ+dL._AC_SX569_.jpg" alt="Leather Backpack" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div className="p-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-medium text-gray-800">Leather Backpack</h3>
+                    <span className="text-sm font-medium text-gray-800">$129</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-                {products.map((p) => (
-                    <ShinyBox key={p.id} product={p} />
-                ))}
-            </div>
-        </section>
-    );
-}
 
-function TheFinalBit() {
-    return (
-        <footer className="bg-white border-t mt-12">
-            <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div>
-                    <div className="text-lg font-semibold">Store</div>
-                    <p className="mt-2 text-sm text-gray-600 max-w-sm">
-                        Modern design, practical function. Everyday goods that last.
-                    </p>
+            <div className="space-y-4">
+              <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
+                <div className="aspect-square overflow-hidden">
+                  <img src="https://m.media-amazon.com/images/I/81PPVRm-JFL._AC_SY500_.jpg" alt="Everyday Sneakers" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
                 </div>
-                <div className="flex gap-8">
-                    <div>
-                        <div className="font-medium">Company</div>
-                        <ul className="mt-2 text-sm text-gray-600 space-y-1">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Press</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div className="font-medium">Help</div>
-                        <ul className="mt-2 text-sm text-gray-600 space-y-1">
-                            <li><a href="#">Shipping</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Payment</a></li>
-                        </ul>
-                    </div>
+                <div className="p-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-medium text-gray-800">Everyday Sneakers</h3>
+                    <span className="text-sm font-medium text-gray-800">$89</span>
+                  </div>
                 </div>
-                <div>
-                    <div className="font-medium">Subscribe</div>
-                    <p className="text-sm text-gray-600 mt-2">
-                        Get updates on new arrivals and offers.
-                    </p>
-                    <div className="mt-3 flex gap-2">
-                        <input 
-                            placeholder="Email" 
-                            className="px-3 py-2 border rounded-md text-sm w-full" 
-                        />
-                        <button className="px-4 py-2 bg-black text-white rounded-md text-sm">
-                            OK
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div className="border-t">
-                <div className="max-w-7xl mx-auto px-6 py-4 text-sm text-gray-500">
-                    © {new Date().getFullYear()} Store. All rights reserved.
-                </div>
-            </div>
-        </footer>
-    );
-}
+              </div>
 
-export default function MegaUltraPageOfDestiny() {
-    return (
-        <div className="min-h-screen bg-white text-gray-900">
-            <WigglyTopHat />
-            <main>
-                <BigDramaticBanner />
-                <GridOfGlory products={PRODUCTS} />
-            </main>
-            <TheFinalBit />
+              <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
+                <div className="aspect-square overflow-hidden">
+                  <img src="https://m.media-amazon.com/images/I/71Xa0fzUiGL._AC_SX679_.jpg" alt="Modern Desk Lamp" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div className="p-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-medium text-gray-800">Modern Desk Lamp</h3>
+                    <span className="text-sm font-medium text-gray-800">$49</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
+              <div className="aspect-square overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/817xESfDw9S._AC_SX679_.jpg" alt="Ceramic Planter" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <div className="p-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm font-medium text-gray-800">Ceramic Planter</h3>
+                  <span className="text-sm font-medium text-gray-800">$34</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
+              <div className="aspect-square overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/51GYi1kNaBL._AC_SX569_.jpg" alt="Sunglasses" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <div className="p-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm font-medium text-gray-800">Sunglasses</h3>
+                  <span className="text-sm font-medium text-gray-800">$69</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
+              <div className="aspect-square overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71wXEGSTt9L._AC_SX466_.jpg" alt="Wool Scarf" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <div className="p-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm font-medium text-gray-800">Wool Scarf</h3>
+                  <span className="text-sm font-medium text-gray-800">$39</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    );
+      </main>
+
+      <footer className="border-t mt-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 py-8 text-center text-sm text-gray-500">
+          © {new Date().getFullYear()} store. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  );
 }

@@ -23,7 +23,7 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-white">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 p-2 bg-white">
       {items.map((item) => (
         <div
           key={item.id}
