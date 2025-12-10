@@ -17,6 +17,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/A/Aba.jsx", "pages/20.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/A/Aba.jsx", "pages/20.tsx", "pages/shopp.js"],
   "exclude": ["node_modules"]
 }

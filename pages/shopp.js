@@ -1,120 +1,65 @@
-export default function ApocalypseStore() {
+export default function Shopp() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <header className="sticky top-0 z-40 w-full bg-white border-b">
-        <div className="mx-auto grid grid-cols-3 h-16 items-center px-6">
-          <div className="flex items-center gap-8">
-            <a className="text-2xl font-semibold">store</a>
-            <nav className="hidden md:flex gap-6 text-sm text-gray-700">
-              <a className="hover:text-black cursor-pointer">All</a>
-              <a className="hover:text-black cursor-pointer">Men</a>
-              <a className="hover:text-black cursor-pointer">Women</a>
-              <a className="hover:text-black cursor-pointer">Accessories</a>
-            </nav>
-          </div>
-          <div className="flex border-2 rounded-xl">
-            <input type="text" placeholder="Search for Products..." className="w-72 px-3 py-2 text-sm" />
-          </div>
-          <div className="flex justify-end">
-            <button className="relative flex items-center justify-center px-3 py-3 bg-gray-100 border-2 rounded-md text-sm hover:bg-gray-200">
-             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7a1 1 0 00.9 1.5h12.1a1 1 0 00.9-1.5L17 13M7 13V6h10v7M5 21h2m10 0h2M7 21a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4z" />
-             </svg>
-            </button>
+    <div className="relative h-screen w-screen overflow-hidden">
+      <aside className="fixed left-0 top-0 h-full w-20 bg-[#111] flex flex-col justify-between py-6 z-50">
+        <div className="flex flex-col items-center justify-center gap-6 text-white text-lg h-full">
+          <img src="/faceb.png" className="w-12 h-12 object-cover object-center rounded-full" />
+          <img src="/ign.png" className="w-12 h-12 object-cover object-center rounded-full" />
+          <img src="/ytb.png" className="w-12 h-12 object-cover object-center rounded-full" />
+        </div>
+        <div className="text-gray-300 text-s rotate-270 mb-16 tracking-wide whitespace-nowrap font-sans">
+          © Best Delivery 2025
+        </div>
+      </aside>
 
+      <header className="fixed top-0 right-0 w-full h-20 flex items-center text-white z-50 relative">
+        <div className="absolute inset-0 bg-black/40 -z-10"></div>
+        <div className="flex items-center gap-4">
+          <button className="text-white text-3xl bg-[#ff2e4d] p-6">☰</button>
+          <div className="text-white font-extrabold text-4xl leading-tight text-center">
+            Best Delivery
           </div>
         </div>
+
+        <div className="ml-auto flex items-center gap-6 h-full">
+         <div className="flex items-center gap-4 h-full">
+          <img src="/pon.png" className="h-12"/>
+           <h1>+976 8806 4934</h1>
+         <div className="flex items-center gap-4">
+         <img src="/mil.png" className="h-6"/>
+          <span>Besthurgelt@gmail.com</span>
+         </div>
+         </div>
+
+  <div className="bg-[#ff2e4d] h-full px-9 font-semibold flex items-center">
+    <img src="/ging.png" className="h-7 pr-3 fill-white"/>
+    <button className="h-full flex items-center">
+      Нэвтрэх
+    </button>
+  </div>
+</div>
+
+
       </header>
 
-      <main>
-        <div className="max-w-7xl mx-auto px-6 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <div className="lg:col-span-2">
-              <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
-                <div className="w-full h-[640px] overflow-hidden">
-                  <img src="https://m.media-amazon.com/images/I/81IKZRQQ+dL._AC_SX569_.jpg" alt="Leather Backpack" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
-                </div>
-                <div className="p-4">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-sm font-medium text-gray-800">Leather Backpack</h3>
-                    <span className="text-sm font-medium text-gray-800">$129</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <img src="/introduction.webp" className="absolute inset-0 w-full h-full object-cover object-center grayscale" />
 
-            <div className="space-y-4">
-              <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
-                <div className="aspect-square overflow-hidden">
-                  <img src="https://m.media-amazon.com/images/I/81PPVRm-JFL._AC_SY500_.jpg" alt="Everyday Sneakers" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
-                </div>
-                <div className="p-4">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-sm font-medium text-gray-800">Everyday Sneakers</h3>
-                    <span className="text-sm font-medium text-gray-800">$89</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
-                <div className="aspect-square overflow-hidden">
-                  <img src="https://m.media-amazon.com/images/I/71Xa0fzUiGL._AC_SX679_.jpg" alt="Modern Desk Lamp" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
-                </div>
-                <div className="p-4">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-sm font-medium text-gray-800">Modern Desk Lamp</h3>
-                    <span className="text-sm font-medium text-gray-800">$49</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-6 grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
-              <div className="aspect-square overflow-hidden">
-                <img src="https://m.media-amazon.com/images/I/817xESfDw9S._AC_SX679_.jpg" alt="Ceramic Planter" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-4">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-medium text-gray-800">Ceramic Planter</h3>
-                  <span className="text-sm font-medium text-gray-800">$34</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
-              <div className="aspect-square overflow-hidden">
-                <img src="https://m.media-amazon.com/images/I/51GYi1kNaBL._AC_SX569_.jpg" alt="Sunglasses" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-4">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-medium text-gray-800">Sunglasses</h3>
-                  <span className="text-sm font-medium text-gray-800">$69</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-md transition-all duration-200">
-              <div className="aspect-square overflow-hidden">
-                <img src="https://m.media-amazon.com/images/I/71wXEGSTt9L._AC_SX466_.jpg" alt="Wool Scarf" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-4">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-medium text-gray-800">Wool Scarf</h3>
-                  <span className="text-sm font-medium text-gray-800">$39</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="absolute left-40 top-1/3 text-white z-50">
+        <h1 className="text-6xl font-extrabold leading-tight">
+          Best <br /> Delivery
+        </h1>
+        <p className="mt-6 text-xl max-w-90">
+          Та доорх товч дээр дарж хүргэлтээ шалгах боломжтой.
+        </p>
+        <button className="mt-8 bg-[#ff2e4d] px-6 py-3 rounded-xl text-lg font-semibold flex items-center gap-2">
+          Хүргэлт шалгах →
+        </button>
+      </div>
+      <div className="absolute bottom-6 right-6">
+        <div className="border border-white/60 text-white p-4 text-3xl font-semibold">
+          1
         </div>
-      </main>
-
-      <footer className="border-t mt-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-8 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} store. All rights reserved.
-        </div>
-      </footer>
+      </div>
     </div>
   );
 }
